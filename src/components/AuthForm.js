@@ -9,7 +9,7 @@ export default function AuthForm({
   handleSubmit,
 }) {
   return (
-    <form className="form" onSubmit={handleSubmit}>
+    <form className="form">
       <p>{errorMessage}</p>
       <div className="form-controls">
         <label>Email:</label>
