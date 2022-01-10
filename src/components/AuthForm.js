@@ -12,18 +12,14 @@ export default function AuthForm({
     <form className="form" onSubmit={handleSubmit}>
       <p>{errorMessage}</p>
       <div className="form-controls">
-        <label>
-          Email:
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </label>
+        <label>Email:</label>
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
       <div className="form-controls">
-        <label>
-          Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
+        <label>Password:</label>
+        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
       </div>
-      <input type="submit" />
+      <button onClick={handleSubmit}>Submit Login</button>
     </form>
   );
 }
